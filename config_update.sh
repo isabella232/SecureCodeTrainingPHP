@@ -2,7 +2,7 @@
 #Change {1..34} to the number of users in training.
 
 #Finding all the config files.
-files=$(find ../ -type f -name config.php | grep -v SecureCodeTrainingPHP)
+files=$(find . -type f -name config.php | grep -v SecureCodeTrainingPHP)
 
 #Count the number of files
 i=0
