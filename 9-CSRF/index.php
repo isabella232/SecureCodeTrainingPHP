@@ -16,7 +16,7 @@
   <body>
     <div class="container">
       <h1 class="text-center mb-4">Change Email</h1>
-      <form action="../Cross-Site-Scripting/change_email.php" method="POST">
+      <form action="../6-Cross-Site-Scripting/change_email.php" method="POST">
         <div class="form-group">
           <label for="email">Email:</label>
           <input type="text" class="form-control" id="email" name="email" required>

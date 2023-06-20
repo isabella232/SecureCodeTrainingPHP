@@ -1,16 +1,24 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>PHP Test</title>
-  </head>
-  <body> 
-  <form action="display_error.php" method="post">
-  Display Error: <input type="submit"><br>
-  </form>
-  <br>
-  <form action="hide_error.php" method="post">
-  Hide Error: <input type="submit"><br>
-  </form>
-  <br>
-  </form>
-  </body>
+<head>
+    <title>Display Errors</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <form action="display_error.php" method="post">
+            <div class="form-group">
+                <label for="display-error">Display Error:</label>
+                <button type="submit" class="btn btn-primary" id="display-error">Submit</button>
+            </div>
+        </form>
+        <br>
+        <form action="hide_error.php" method="post">
+            <div class="form-group">
+                <label for="hide-error">Hide Error:</label>
+                <button type="submit" class="btn btn-primary" id="hide-error">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
 </html>
