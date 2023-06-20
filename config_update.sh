@@ -14,6 +14,7 @@ created=$(mysql -e "SELECT user from mysql.user where user REGEXP 'learning[0-9]
 if [ $created -gt $i ]; then
     j=1
     for f in $files; do
+        echo -e "Changing file:" $f "with values:" $j"\n"
         sed -i "s/changemedatabase/db$j/g" "$f"
         sed -i "s/changemeusername/learning$j/g" "$f"
         sed -i "s/changemepassword/Secure@Training@$j/g" "$f"
