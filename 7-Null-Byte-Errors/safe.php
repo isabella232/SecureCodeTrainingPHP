@@ -20,8 +20,9 @@
         <div class="card-body">
           <?php
             $file = $_GET["file"] . ".php";
-            $clean = str_replace(chr(0), "", $file);
-            echo include("$clean");
+            //Edit here
+          
+            echo include("$file");
             echo "I am the SAFE code!";
           ?>
         </div>
